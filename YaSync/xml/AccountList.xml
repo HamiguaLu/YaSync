@@ -1,0 +1,10 @@
+<Accounts>
+  <Account>
+    <Name>Android-Sync</Name>
+    <Type>com.android_sync.account</Type>
+  </Account>
+  <Account>
+    <Name>lugangxyz@gmail.com</Name>
+    <Type>com.google</Type>
+  </Account>
+</Accounts>

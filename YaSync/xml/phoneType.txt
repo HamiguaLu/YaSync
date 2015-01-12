@@ -1,0 +1,99 @@
+	
+#define		PHONE_TYPE_HOME										1 
+PR_HOME_TELEPHONE_NUMBER
+
+
+
+#define		PHONE_TYPE_MOBILE									2 
+PR_MOBILE_TELEPHONE_NUMBER
+
+
+#define		PHONE_TYPE_WORK										3 
+PR_BUSINESS_TELEPHONE_NUMBER
+
+
+
+#define		PHONE_TYPE_FAX_WORK									4 
+PR_BUSINESS_FAX_NUMBER
+
+
+#define		PHONE_TYPE_FAX_HOME									5
+
+
+ 
+#define		PHONE_TYPE_PAGER									6 
+PR_PAGER_TELEPHONE_NUMBER
+
+
+#define		PHONE_TYPE_OTHER									7 
+PR_OTHER_TELEPHONE_NUMBER
+
+
+#define		PHONE_TYPE_CALLBACK									8 
+PR_CALLBACK_TELEPHONE_NUMBER
+
+
+#define		PHONE_TYPE_CAR										9 
+PR_CAR_TELEPHONE_NUMBER
+
+
+#define		PHONE_TYPE_COMPANY_MAIN								10
+
+#define		PHONE_TYPE_ISDN										11
+PR_ISDN_NUMBER
+
+
+#define		PHONE_TYPE_MAIN										12
+#define		PHONE_TYPE_OTHER_FAX								13
+#define		PHONE_TYPE_RADIO									14
+PR_RADIO_TELEPHONE_NUMBER
+
+
+#define		PHONE_TYPE_TELEX									15
+PR_TELEX_NUMBER
+
+
+#define		PHONE_TYPE_TTY_TDD									16
+PR_TTYTDD_PHONE_NUMBER
+
+#define		PHONE_TYPE_WORK_MOBILE								17
+#define		PHONE_TYPE_WORK_PAGER								18
+#define		PHONE_TYPE_ASSISTANT								19 
+PR_ASSISTANT_TELEPHONE_NUMBER
+
+
+#define EMAIL_TYPE_HOME	 1
+#define EMAIL_TYPE_MOBILE	 4
+#define EMAIL_TYPE_OTHER	 3
+#define EMAIL_TYPE_WORK	 2
+
+
+
+
+#define PR_COMPANY_NAME								PROP_TAG( PT_TSTRING,	0x3A16)
+#define PR_TITLE									PROP_TAG( PT_TSTRING,	0x3A17)
+
+
+#define PR_STATE_OR_PROVINCE						PROP_TAG( PT_TSTRING,	0x3A28)
+#define PR_STREET_ADDRESS							PROP_TAG( PT_TSTRING,	0x3A29)
+#define PR_POSTAL_CODE								PROP_TAG( PT_TSTRING,	0x3A2A)
+
+#define PR_NICKNAME									PROP_TAG( PT_TSTRING, 0x3A4F)
+#define PR_PERSONAL_HOME_PAGE						PROP_TAG( PT_TSTRING, 0x3A50)
+#define PR_BUSINESS_HOME_PAGE						PROP_TAG( PT_TSTRING, 0x3A51)
+
+
+
+
+#define PidLidEmail1EmailAddress		0x8083
+#define PidLidEmail2EmailAddress		0x8093
+#define PidLidEmail3EmailAddress		0x80A3
+
+
+
+
+
+
+
+
+
