@@ -1,0 +1,16 @@
+<SysInfoList>
+  <BatteryLevel>74</BatteryLevel>
+  <AvailRAM>96960</AvailRAM>
+  <TotalRAM>403432+</TotalRAM>
+  <SDCardAvailableSpace>-1788379136</SDCardAvailableSpace>
+  <SDCardTotalSpace>-1480589312</SDCardTotalSpace>
+  <ProductManufacturer>Meizu</ProductManufacturer>
+  <ProductModel>M9</ProductModel>
+  <CpuModel>ARMv7+Processor+rev+2+%28v7l%29+</CpuModel>
+  <CpuFreq>663.76</CpuFreq>
+  <PhoneID>MeizuM9864046007477548</PhoneID>
+  <AppVer>35</AppVer>
+  <AuthState>11</AuthState>
+  <OS_VER>15%2C4.0.3</OS_VER>
+  <SDK_VER>15</SDK_VER>
+</SysInfoList>

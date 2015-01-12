@@ -1,0 +1,64 @@
+PidLidClipStart Property
+Type: PtypTime ([MS-OXCDATA] section 2.11.1)
+For single-instance Calendar objects, the PidLidClipStart property ([MS-OXPROPS] section 2.60) specifies the start date and 
+time of the event in UTC. 
+For a recurring series, this property specifies midnight in the user's machine time zone, on the date
+ of the first instance, then is persisted in UTC.
+
+2.2.1.15 PidLidClipEnd Property
+Type: PtypTime ([MS-OXCDATA] section 2.11.1)
+For single-instance Calendar objects, the PidLidClipEnd property ([MS-OXPROPS] section 2.59) specifies the end date and time of 
+the event in UTC. 
+For a recurring series, this property specifies midnight in the user's machine time zone, on the date of the 
+last instance of the recurring series, then is persisted in UTC, unless the recurring series has no end, in which case the value 
+MUST be "31 August 4500, 11:59 P.M".
+
+
+PidLidAppointmentStartWhole Property
+Type: PtypTime ([MS-OXCDATA] section 2.11.1)
+The PidLidAppointmentStartWhole property ([MS-OXPROPS] section 2.29) specifies the start date and time of the event in Coordinated 
+Universal Time (UTC). The value of this property MUST be less than or equal to the value of the PidLidAppointmentEndWhole property 
+(section 2.2.1.6). 
+For a recurring series, the value of this property is the start date and time of the first instance according 
+to the recurrence pattern. Note that for some appointments, the value of this time property is not interpreted strictly as a UTC
+ time. For more details about how this property is interpreted, see section 3.1.5.5.<3>
+ 
+ 
+2.2.1.6 PidLidAppointmentEndWhole Property
+Type: PtypTime ([MS-OXCDATA] section 2.11.1)
+The PidLidAppointmentEndWhole property ([MS-OXPROPS] section 2.14) specifies the end date and time for the event in UTC. The value 
+of this property MUST be greater than or equal to the value of the PidLidAppointmentStartWhole property (section 2.2.1.5). 
+For a recurring series, the value of this property is the end date and time of the first instance according to the recurrence pattern.
+Note that for some appointments, the value of this time property is not interpreted strictly as a UTC time. For more details 
+about how this property is interpreted, see section 3.1.5.5.<4>
+
+
+StartDate (4 bytes): The date of the first occurrence. It is stored as the number of minutes between midnight, January 1, 1601, 
+and midnight of the specified day.
+
+EndDate (4 bytes): The ending date for the recurrence. It is stored as the number of minutes between midnight, January 1, 1601,
+and midnight of the specified day. When the value of the EndType field is 0x00002022 (end after n occurrences), this value is calculated 
+as the end date.If the recurrence does not have an end date, the value of the EndDate field MUST be set to 0x5AE980DF.
+
+StartTimeOffset (4 bytes): The number of minutes, since midnight, after which each occurrence starts. For example, the value for midnight is 0 (zero)
+and the value for 12:00 P.M. is 720.
+
+EndTimeOffset (4 bytes): The number of minutes, since midnight, after which each occurrence ends. For example, the value for midnight is 0 (zero)
+and the value for 12:00 P.M. is 720.
+
+PidLidReminderSignalTime Property
+Type: PtypTime ([MS-OXCDATA] section 2.11.1)
+The PidLidReminderSignalTime property ([MS-OXPROPS] section 2.224) specifies the time when a reminder transitions from pending to overdue. This property MUST be set if the PidLidReminderSet property (section 2.2.1.1) is set to TRUE. Clients MUST set the value of this property in Coordinated Universal Time (UTC).
+This property is not overridden by exceptions; there is a single signal time per Recurring Calendar object.
+The value of this property is not interpreted strictly as UTC. For details, see [MS-OXOCAL] section
+
+PidLidReminderTime Property
+Type: PtypTime ([MS-OXCDATA] section 2.11.1)
+The PidLidReminderTime property ([MS-OXPROPS] section 2.225) specifies the initial signal time for Message objects other than Calendar objects. For Calendar objects, the value of this property represents the time after which the user would be late; that is, the start time of the appointment. Clients MUST set the value in UTC.
+
+
+PidLidTimeZoneStruct
+PidLidAppointmentTimeZoneDefinitionStartDisplay
+
+
+

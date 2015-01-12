@@ -1,0 +1,38 @@
+// MyAddin.idl : IDL source for MyAddin.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (MyAddin.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(FC29673A-C2BA-4eca-B766-D99F7A2E92D2),
+		dual,
+		helpstring("IAddin Interface"),
+		pointer_default(unique)
+	]
+	interface IAddin : IDispatch
+	{
+	};
+
+[
+	uuid(E27E91EC-2E7E-4928-9517-7430F2318B7D),
+	version(1.0),
+	helpstring("MobiTNT sms Addin 1.0 Type Library")
+]
+library MYADDINLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(B5157605-6174-4fa8-AE36-F0F8ED2A84F0),
+		helpstring("Addin Class")
+	]
+	coclass Addin
+	{
+		[default] interface IAddin;
+	};
+};

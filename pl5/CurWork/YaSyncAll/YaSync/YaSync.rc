@@ -1,0 +1,816 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\YaSync.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\YaSync.ico"
+IDI_HOME                ICON                    "res\\home.ico"
+IDI_BUY                 ICON                    "res\\buy.ico"
+IDI_HELP                ICON                    "res\\help.ico"
+IDI_SETTING             ICON                    "res\\setting.ico"
+IDI_SYNC                ICON                    "res\\sync.ico"
+IDI_PHONE_TYPE          ICON                    "res\\phonetype.ico"
+IDI_IP_ADDR             ICON                    "res\\ip.ico"
+IDI_SECURITY_CODE       ICON                    "res\\security.ico"
+IDI_BATTERY             ICON                    "res\\battery.ico"
+IDI_PHONE_OFFLINE       ICON                    "res\\PhoneOffline.ico"
+IDI_SUB_HELP            ICON                    "res\\subHelp.ico"
+IDI_SUB_BUY             ICON                    "res\\subBuy.ico"
+IDI_SYNC_ITEM           ICON                    "res\\SyncItem.ico"
+IDI_SYNC_PROGRESS       ICON                    "res\\SyncProgress.ico"
+IDI_NOW_SYNC_ITEM       ICON                    "res\\NowSyncItem.ico"
+IDI_SUB_SYNC            ICON                    "res\\subSync.ico"
+IDI_SUB_SETTING         ICON                    "res\\subSetting.ico"
+IDI_OUTLOOK_PROFILE     ICON                    "res\\outlookProfile.ico"
+IDI_AUTO_START          ICON                    "res\\autoStart.ico"
+IDI_AUTO_SYNC           ICON                    "res\\autoSync.ico"
+IDI_SETTING_SMS         ICON                    "res\\sms.ico"
+IDI_SETTING_ACCOUNT     ICON                    "res\\account.ico"
+IDI_SETTING_CALENDAR    ICON                    "res\\calendar.ico"
+IDI_SETTING_CONTACT     ICON                    "res\\contact.ico"
+IDI_SETTING_ENABLE      ICON                    "res\\enable.ico"
+IDI_SETTING_FOLDER      ICON                    "res\\folder.ico"
+IDI_SETTING_MMS         ICON                    "res\\mms.ico"
+IDI_OFFLINE             ICON                    "res\\PEOffline.ico"
+IDI_RESTORE             ICON                    "res\\restore.ico"
+IDI_ENTER_SECURITY_CODE ICON                    "res\\security-code.ico"
+IDI_EXIT_AFTER_SYNC     ICON                    "res\\ExitAfterSync.ico"
+IDI_READ_FLAG           ICON                    "res\\read-flag.ico"
+IDI_ICON_RAM            ICON                    "res\\RAM .ico"
+IDI_SDCARD              ICON                    "res\\SDCARD.ico"
+IDI_FILE_TRANSFER       ICON                    "res\\file_transfer.ico"
+IDI_IMAGE_VIEWER        ICON                    "res\\Image_Viewer.ico"
+IDI_SMS_EDITOR          ICON                    "res\\New_SMS.ico"
+IDI_APK_INSTALLER       ICON                    "res\\APK_Installer.ico"
+IDI_RESTORE_DLG         ICON                    "res\\SMS_Restore.ico"
+IDI_NEW_SMS             ICON                    "res\\SMS-Editor.ico"
+IDI_BTN_MIN             ICON                    "res\\btn-min.ico"
+IDI_CLOSE_BTN           ICON                    "res\\btn_close.ico"
+IDI_BLACKLIST           ICON                    "res\\blacklist.ico"
+IDI_ADD_BLACKLIST       ICON                    "res\\add-blacklist.ico"
+IDI_SAVE_CONTACT        ICON                    "res\\save-contact.ico"
+IDI_REPORT              ICON                    "res\\report.ico"
+IDI_BLOCK               ICON                    "res\\block.ico"
+IDI_STAT                ICON                    "res\\stat.ico"
+IDI_CALL_STAT           ICON                    "res\\callstat.ico"
+IDI_SMS_STAT            ICON                    "res\\smsstat.ico"
+IDI_INSTALL             ICON                    "res\\install.ico"
+IDI_ICON_REPLY          ICON                    "res\\sms-reply.ico"
+IDI_QUICK_START         ICON                    "res\\quickStart.ico"
+IDI_ICON_VIDEO          ICON                    "res\\video.ico"
+IDI_ICON_AUDIO          ICON                    "res\\audio.ico"
+IDI_ICON_IMAGE          ICON                    "res\\image.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_YASYNC_DIALOG DIALOGEX 0, 0, 391, 212
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_BORDER
+EXSTYLE WS_EX_APPWINDOW
+FONT 12, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    CONTROL         203,IDC_STATIC_TOOLBAR,"Static",SS_BITMAP,0,0,391,12
+    PUSHBUTTON      "Home",ID_HOME_BTN,0,49,87,29,BS_ICON,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Settings",ID_SETTING_BTN,0,109,87,29
+    PUSHBUTTON      "Buy",ID_BUY_BTN,0,169,87,29
+    PUSHBUTTON      "Help",ID_HELP_BTN,0,139,87,29
+    PUSHBUTTON      "Sync",ID_SYNC_BTN,0,79,87,29,BS_FLAT
+    PUSHBUTTON      "",IDC_CLOSE_BTN,376,1,9,9
+    PUSHBUTTON      "",IDC_MIN_BTN,360,1,9,9
+END
+
+IDD_SYNC_UI DIALOGEX 0, 0, 341, 280
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "",IDC_STATIC,10,64,313,127
+    LTEXT           "Ready to Sync",IDC_STATIC_NOW_SYNC,51,126,173,32
+    LTEXT           "Sync Progress",IDC_STATIC,51,170,45,8
+    PUSHBUTTON      "Start Sync",IDC_BTN_START_SYNC,243,149,68,33
+    CONTROL         "",IDC_SYNC_PROGRESS,"msctls_progress32",WS_BORDER,103,169,108,14
+    ICON            IDI_NOW_SYNC_ITEM,IDC_STATIC,25,123,20,20,SS_REALSIZEIMAGE
+    ICON            IDI_SYNC_PROGRESS,IDC_STATIC,24,167,20,20,SS_REALSIZEIMAGE
+    ICON            IDI_SUB_SYNC,IDC_STATIC,245,80,20,20,SS_REALSIZEIMAGE
+    CONTROL         "Sync SMS",IDC_CHECK_SYNC_SMS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,75,47,10
+    CONTROL         "Sync Call Log",IDC_CHECK_SYNC_CALL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,83,75,57,10
+    CONTROL         "Sync MMS",IDC_CHECK_SYNC_MMS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,160,75,48,10
+    CONTROL         "Sync Calendar",IDC_CHECK_SYNC_CALENDAR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,91,60,10
+    CONTROL         "Sync Contacts",IDC_CHECK_SYNC_CONTACTS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,83,91,59,10
+    CONTROL         "Sync Video",IDC_CHECK_SYNC_VIDEO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,107,51,10
+    CONTROL         "Sync Audio",IDC_CHECK_SYNC_AUDIO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,83,107,50,10
+    CONTROL         "Sync Image",IDC_CHECK_SYNC_IMAGE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,160,91,52,10
+END
+
+IDD_MAIN_UI DIALOGEX 0, 0, 340, 245
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 10, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "Device Info",IDC_STATIC,19,100,305,79
+    LTEXT           "Device Not Connected",IDC_STATIC_DEV_CONN_INFO,15,15,84,8,0,WS_EX_TRANSPARENT
+    GROUPBOX        "",IDC_STATIC,19,184,305,56
+    LTEXT           "Device IP",IDC_STATIC,44,218,49,8
+    CONTROL         "",IDC_IP_ADDR,"SysIPAddress32",WS_TABSTOP,93,216,129,14
+    PUSHBUTTON      "Connect",IDC_BTN_CONNECT,243,217,50,14
+    LTEXT           "Phone:",IDC_STATIC_PHONE_NAME,45,113,175,8
+    CONTROL         "",IDC_PROGRESS_BATTERY,"msctls_progress32",WS_BORDER,45,134,175,14
+    ICON            IDI_PHONE_TYPE,IDC_STATIC,21,108,16,16,SS_CENTERIMAGE | SS_RIGHTJUST | SS_REALSIZEIMAGE
+    ICON            IDI_BATTERY,IDC_STATIC,24,133,16,16,SS_CENTERIMAGE | SS_REALSIZEIMAGE,WS_EX_TRANSPARENT
+    ICON            IDI_PHONE_OFFLINE,IDC_STATIC,245,116,16,16,SS_REALSIZEIMAGE
+    ICON            IDI_IP_ADDR,IDC_STATIC,22,214,16,16,SS_CENTERIMAGE | SS_REALSIZEIMAGE
+    COMBOBOX        IDC_COMBO_CONNECTED_PHONES,81,31,131,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Switch",IDC_SWITCH_2_PHONE_BTN,217,31,50,14
+    LTEXT           "Connected Phones",IDC_STATIC_CONN_PHONES,15,33,68,8
+    ICON            IDI_SDCARD,IDC_STATIC,23,159,16,16,SS_REALSIZEIMAGE
+    CONTROL         "",IDC_PROGRESS_SDCARD,"msctls_progress32",WS_BORDER,45,160,175,14
+    PUSHBUTTON      "New SMS",IDC_BTN_NEW_SMS,16,56,50,38
+    PUSHBUTTON      "Restore Data",IDC_BTN_RESTORE,272,56,50,38
+    PUSHBUTTON      "App Manager",IDC_BTN_APP_MANAGER,144,57,50,38
+    PUSHBUTTON      "Image Viewer",IDC_BTN_PHOTO,80,56,50,38
+    PUSHBUTTON      "File Transfer",IDC_BTN_FILE_MANAGER,208,56,50,38
+    PUSHBUTTON      "Quick Start",IDC_BTN_QUICK_START,288,9,45,40
+    LTEXT           "",IDC_STATIC_CONN_STAT,25,197,198,8
+END
+
+IDD_SETTING_UI DIALOGEX 0, 0, 340, 245
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 10, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    ICON            IDI_SUB_SETTING,IDC_STATIC,250,180,16,16,SS_REALSIZEIMAGE
+    CONTROL         "",IDC_SETTING_TAB,"SysTabControl32",0x0,20,14,279,183,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Save",IDC_BTN_SAVE_SETTING,85,207,55,22
+    PUSHBUTTON      "Reset",IDC_BTN_RESET_SETTING,171,207,55,22
+END
+
+IDD_HTML_UI DIALOGEX 0, 0, 415, 279
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_BUY_UI DIALOGEX 0, 0, 310, 245
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 10, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    ICON            IDI_SUB_BUY,IDC_STATIC,51,73,16,16,SS_REALSIZEIMAGE
+    PUSHBUTTON      "Buy Now for only $25.99",IDC_BTN_BUY_ONLINE,192,97,90,21
+    EDITTEXT        IDC_EDIT_SN,46,167,129,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Activate Now",IDC_BTN_ACTIVATE,192,165,90,21
+    GROUPBOX        "",IDC_STATIC,31,56,271,140
+    GROUPBOX        "Already have a serial number?enter below",IDC_STATIC,39,152,246,40
+    LTEXT           "S",IDC_STATIC_EXPIR_INFO,41,42,160,8
+END
+
+IDD_HELP_UI DIALOGEX 0, 0, 310, 245
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 10, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,21,139,16,16
+    GROUPBOX        "",IDC_STATIC,14,23,285,200
+    LTEXT           "YaSync 2",IDC_STATIC_REV,44,144,100,8
+    ICON            IDI_SUB_HELP,IDC_STATIC,51,73,20,20,SS_REALSIZEIMAGE
+    PUSHBUTTON      "Trouble Shooting",IDC_BTN_TROUBLE_SHOOTING,157,38,134,25
+    PUSHBUTTON      "Send support request",IDC_BTN_GET_LOG_FILE,157,192,134,16
+    LTEXT           "MobiTNT.com 2014",IDC_STATIC,52,167,61,8
+    GROUPBOX        "",IDC_STATIC,145,79,148,138
+    EDITTEXT        IDC_EDIT_EMAIL,182,90,107,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PROBLEM,181,113,107,71,ES_MULTILINE
+    LTEXT           "Email",IDC_STATIC,153,94,18,8
+    LTEXT           "Problem",IDC_STATIC,151,149,27,8
+END
+
+IDD_SETTING_COMMON_UI DIALOGEX 0, 0, 310, 175
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 10, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Auto Start",IDC_AUTO_START,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,46,38,141,10
+    CONTROL         "Auto start Sync once Device Connected",IDC_AUTO_SYNC,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,46,58,166,10
+    COMBOBOX        IDC_OUTLOOK_PROFILE,159,98,100,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    ICON            IDI_AUTO_START,IDC_STATIC,23,35,20,20,SS_REALSIZEIMAGE
+    ICON            IDI_AUTO_SYNC,IDC_STATIC,22,55,20,20,SS_REALSIZEIMAGE
+    ICON            IDI_OUTLOOK_PROFILE,IDC_STATIC,23,95,20,20,SS_REALSIZEIMAGE
+    CONTROL         "Use Default Outlook data file",IDC_CHECK_USE_DEFAULT_PROFILE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,46,98,109,10
+    ICON            IDI_EXIT_AFTER_SYNC,IDC_STATIC,21,75,20,20,SS_REALSIZEIMAGE
+    CONTROL         "Exit After Sync Fininshed",IDC_CHECK_EXIT_AFTER_SYNC,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,46,78,97,10
+END
+
+IDD_SETTING_SMS_UI DIALOGEX 0, 0, 310, 175
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 10, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Enable MMS sync",IDC_ENABLE_MMS_SYNC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,36,43,73,10
+    CONTROL         "Enable SMS sync",IDC_ENABLE_SMS_SYNC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,36,19,71,10
+    CONTROL         "Store SMS/MMS to selected folder",IDC_STORE_SMS_TO_FOLDER,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,36,91,136,10
+    COMBOBOX        IDC_SMS_FOLDER_LIST,172,89,117,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    ICON            IDI_SETTING_SMS,IDC_STATIC,16,18,20,20,SS_REALSIZEIMAGE
+    ICON            IDI_SETTING_MMS,IDC_STATIC,16,43,20,20,SS_REALSIZEIMAGE
+    ICON            IDI_SETTING_FOLDER,IDC_STATIC,16,92,20,20,SS_REALSIZEIMAGE
+    CONTROL         "Mark UnRead SMS",IDC_CHECK_SMS_READ_FLAG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,36,67,77,10
+    ICON            IDI_READ_FLAG,IDC_STATIC,16,67,20,20,SS_REALSIZEIMAGE
+    CONTROL         "Show New SMS Report",IDC_SHOW_SMS_REPORT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,36,112,115,10
+    ICON            IDI_REPORT,IDC_STATIC,14,110,20,20,SS_REALSIZEIMAGE
+END
+
+IDD_SETTING_CALLLOG_UI DIALOGEX 0, 0, 310, 175
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 10, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Enable Call Log Sync",IDC_ENABLE_CALLLOG_SYNC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,38,19,83,10
+    CONTROL         "Store Call Log to selected folder",IDC_ENABLE_CALL_LOG_FOLDER,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,38,48,128,10
+    COMBOBOX        IDC_CALL_LOG_FOLDER,162,49,117,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    ICON            IDI_SETTING_ENABLE,IDC_STATIC,17,18,20,20,SS_REALSIZEIMAGE
+    ICON            IDI_SETTING_FOLDER,IDC_STATIC,17,48,20,20,SS_REALSIZEIMAGE
+END
+
+IDD_SETTING_CONTACT_UI DIALOGEX 0, 0, 310, 175
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 10, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    ICON            IDI_SETTING_ENABLE,IDC_STATIC,19,12,20,20,SS_REALSIZEIMAGE
+    CONTROL         "Enable Contact Sync",IDC_ENABLE_CONTACT_SYNC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,40,14,89,10
+    ICON            IDI_SETTING_ACCOUNT,IDC_STATIC,19,29,20,20,SS_REALSIZEIMAGE
+    CONTROL         "",IDC_ANDROID_ACCOUNT_LIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,40,41,197,50
+    LTEXT           "Addional Folder Need Sync",IDC_STATIC,39,101,136,8
+    CONTROL         "",IDC_CONTACT_FOLDER,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,38,111,198,50
+    ICON            IDI_SETTING_FOLDER,IDC_STATIC,18,100,20,20,SS_REALSIZEIMAGE
+    COMBOBOX        IDC_CONTACT_SYNC_TYPE,132,13,105,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Only Sync Contact belong to Android Account:",IDC_ENABLE_CONTACT_ACCOUNT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,37,31,222,10
+END
+
+IDD_SETTING_CALENDAR_UI DIALOGEX 0, 0, 310, 175
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 10, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    ICON            IDI_SETTING_ENABLE,IDC_STATIC,14,10,20,20,SS_REALSIZEIMAGE
+    CONTROL         "Enable Calendar Sync",IDC_ENABLE_CAL_SYNC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,38,12,94,10
+    ICON            IDI_SETTING_CALENDAR,IDC_STATIC,14,25,20,20,SS_REALSIZEIMAGE
+    CONTROL         "",IDC_CAL_LIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,38,36,197,50
+    LTEXT           "Additional Folder Need Sync",IDC_STATIC,38,91,136,8
+    CONTROL         "",IDC_CAL_FOLDER_NEED_SYNC,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,38,100,198,50
+    ICON            IDI_SETTING_FOLDER,IDC_STATIC,14,89,20,20,SS_REALSIZEIMAGE
+    COMBOBOX        IDC_CAL_SYNC_TYPE,136,11,134,30,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Sync After Time:",IDC_CHECK_SYNC_AFTER_TIME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,155,71,10
+    CONTROL         "",IDC_CALENDAR_DATE_PICKER,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,118,152,53,15
+    CONTROL         "",IDC_CALENDAR_TIME_PICKER,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,187,152,45,15
+    CONTROL         "Only Sync Selected Android Calendars",IDC_CHECK_ONLY_SYNC_SELECTED_CALS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,38,25,141,10
+END
+
+IDD_SETTING_DEVICE_UI DIALOGEX 0, 0, 310, 175
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 10, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Blocked Devices",IDC_STATIC,57,17,73,8
+    CONTROL         "",IDC_DEVICE_LIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,38,50,216,113
+    LTEXT           " YaSync will not connect to these devices",IDC_STATIC,37,36,191,8
+    ICON            IDI_BLOCK,IDC_STATIC,33,15,20,20,SS_REALSIZEIMAGE
+END
+
+IDD_RESTORE DIALOGEX 0, 0, 307, 109
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 10, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Restore:",IDC_STATIC,129,19,39,8
+    CONTROL         "SMS",IDC_RADIO_SMS_RESOTRE,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,174,18,31,10
+    CONTROL         "Call Log",IDC_RADIO_CALL_LOG_RESTORE,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,232,18,42,10
+    PUSHBUTTON      "Start Restore",IDC_BTN_RESTORE,115,69,60,25
+    PUSHBUTTON      "Cancel",IDC_BTN_CANCEL_RESTORE,203,69,60,25
+    ICON            IDI_SYNC_ITEM,IDC_STATIC,104,17,20,20,SS_REALSIZEIMAGE
+    ICON            IDI_RESTORE,IDC_STATIC,18,13,20,20,SS_REALSIZEIMAGE
+    CONTROL         "",IDC_PROGRESS_RESTORE,"msctls_progress32",WS_BORDER,106,49,164,14
+    LTEXT           "",IDC_STATIC_RESTORE,107,37,166,8
+END
+
+IDD_ENTER_SECURITY_CODE DIALOGEX 0, 0, 277, 101
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 10, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Connect",IDOK,30,80,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,86,80,50,14
+    LTEXT           "Please enter security code for device:",IDC_STATIC_ENTER_S_CODE,112,16,128,22
+    EDITTEXT        IDC_EDIT_SECURITY_CODE,112,44,120,14,ES_AUTOHSCROLL
+    ICON            IDI_ENTER_SECURITY_CODE,IDC_STATIC,16,8,20,20,SS_REALSIZEIMAGE
+    PUSHBUTTON      "What is security code",IDC_BTN_WHAT_SECURITY_CODE,167,80,90,14
+    CONTROL         "Don't Ask Again for this device",IDC_ADD_BLOCK_DEVICE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,112,64,120,10
+END
+
+IDD_INSTALL_DLG DIALOGEX 0, 0, 262, 93
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 10, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Start install",ID_START_INSTALL,116,63,50,14
+    PUSHBUTTON      "Close",IDCANCEL,192,63,50,14
+    CONTROL         "Device detected,\r\ninstall/update YaSync client on it \r\nright now?",IDC_STATIC_INSTALL_INFO,
+                    "Static",SS_LEFTNOWORDWRAP | WS_GROUP,119,21,122,28
+    ICON            IDI_INSTALL,IDC_STATIC,15,14,20,20,SS_REALSIZEIMAGE
+END
+
+IDD_NEW_SMS_DLG DIALOGEX 0, 0, 467, 253
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 10, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         244,IDC_STATIC,"Static",SS_BITMAP,0,0,503,13
+    PUSHBUTTON      "",IDC_BTN_CANCEL,450,0,12,12
+    PUSHBUTTON      "Select All",IDC_BTN_SEL_ALL,30,236,83,14
+    EDITTEXT        IDC_EDIT_TO_LIST,163,25,288,19,ES_AUTOHSCROLL
+    CONTROL         "",IDC_TO_CONTACTS,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,5,38,152,195
+    EDITTEXT        IDC_EDIT_SMS_CONTENT,163,67,285,92,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "Send Now",IDC_BTN_SEND_NOW,298,177,85,28
+    LTEXT           "To:",IDC_STATIC,163,14,114,8
+    LTEXT           "Content:",IDC_STATIC,163,51,110,8
+    GROUPBOX        "Scheduled sms",IDC_STATIC,164,173,126,66
+    CONTROL         "Send at Time",IDC_SEND_AT_TIME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,170,185,66,10
+    CONTROL         "",IDC_YEAR_PICKER,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,169,196,53,15
+    CONTROL         "",IDC_TIME_PICKER,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,235,196,51,15
+    PUSHBUTTON      "Scheduled SMS List",IDC_SMS_LIST_BTN,175,216,104,14
+    EDITTEXT        IDC_EDIT_INSERT_CONTACT,5,17,71,14,ES_AUTOHSCROLL | ES_WANTRETURN
+    PUSHBUTTON      "Insert Contact",IDC_INSERT_CONTACT_BTN,83,16,74,14
+    ICON            IDI_NEW_SMS,IDC_STATIC,393,188,20,20,SS_REALSIZEIMAGE
+    LTEXT           "",IDC_STATIC_TEXT_COUNT,165,161,179,8
+END
+
+IDD_SMS_LIST_DLG DIALOGEX 0, 0, 416, 185
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Delete",ID_DEL_SMS_BTN,84,162,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,243,162,50,14
+    CONTROL         "",IDC_SMS_LIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,395,148
+END
+
+IDD_SETTING_FILTER DIALOGEX 0, 0, 310, 175
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 10, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_FILTER,50,23,90,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Add to black list",IDC_BTN_ADD_FILTER,169,23,67,14
+    CONTROL         "",IDC_LIST_FILTER,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,26,66,215,100
+    LTEXT           "Black List",IDC_STATIC,50,49,79,8
+    PUSHBUTTON      "Select All",IDC_BTN_SELECT_ALL,247,75,50,14
+    ICON            IDI_ADD_BLACKLIST,IDC_STATIC,26,22,20,20,SS_REALSIZEIMAGE
+    ICON            IDI_BLACKLIST,IDC_STATIC,26,48,20,20,SS_REALSIZEIMAGE
+    PUSHBUTTON      "Apply Filter",IDC_BTN_APPLY_FILTER,247,96,50,14
+END
+
+IDD_ADD_CONTACT_DLG DIALOGEX 0, 0, 252, 117
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Name",IDC_STATIC,111,27,19,8
+    LTEXT           "Phone",IDC_STATIC,111,56,19,8
+    EDITTEXT        IDC_CONTACT_NAME,143,25,85,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CONTACT_PHONE,143,54,85,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Save",IDC_BTN_SAVE_CONTACTS,43,87,50,14
+    PUSHBUTTON      "Cancel",IDC_BTN_CANCEL,142,87,50,14
+    ICON            IDI_SAVE_CONTACT,IDC_STATIC,13,7,21,20,SS_REALSIZEIMAGE
+END
+
+IDD_STAT DIALOGEX 0, 0, 256, 129
+STYLE DS_SETFONT | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 12, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",ID_BTN_STAT_OK,198,38,50,14
+    CTEXT           "Stat of Gerry",IDC_STAT_TITLE,8,18,180,8
+    GROUPBOX        "SMS Stat",IDC_STATIC,8,30,180,36
+    GROUPBOX        "Call Stat",IDC_STATIC,8,69,180,51
+    ICON            IDI_STAT,IDC_STATIC,195,71,14,13,SS_REALSIZEIMAGE
+    ICON            IDI_SMS_STAT,IDC_STATIC,16,45,14,13,SS_REALSIZEIMAGE
+    ICON            IDI_CALL_STAT,IDC_STATIC,15,87,14,13,SS_REALSIZEIMAGE
+    LTEXT           "sms",IDC_STAT_SMS_INFO,49,43,119,15
+    LTEXT           "call",IDC_STAT_CALL_STAT,49,82,119,32
+END
+
+IDD_TRAY DIALOGEX 0, 0, 200, 105
+STYLE DS_SETFONT | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 10, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    CONTROL         242,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,0,0,237,10
+    PUSHBUTTON      "",IDC_CLOSE_BTN,176,0,9,8
+    DEFPUSHBUTTON   "Next Message",ID_NEXT_MSG_BTN,143,14,55,18
+    PUSHBUTTON      "Reply",ID_REPLY_BTN,143,66,55,18
+    LTEXT           "Static",IDC_STATIC_MSG,0,13,136,86
+END
+
+IDD_SETTING_MEDIA DIALOGEX 0, 0, 310, 175
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Enable Image Sync",IDC_ENABLE_IMAGE_SYNC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,34,20,77,10
+    CONTROL         "Enable Video Sync",IDC_ENABLE_VIDEO_SYNC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,34,68,74,10
+    CONTROL         "Enable Audio Sync",IDC_ENABLE_AUDIO_SYNC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,34,117,75,10
+    LTEXT           "Save to Folder",IDC_STATIC,10,39,48,8
+    LTEXT           "Save to folder",IDC_STATIC,10,84,46,8
+    LTEXT           "Save to folder",IDC_STATIC,10,135,46,8
+    EDITTEXT        IDC_EDIT_IMAGE_FOLDER_PATH,61,36,150,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_BTN_GET_IMAGE_PATH,233,36,50,14
+    EDITTEXT        IDC_EDIT_VIDEO_FODLER_PATH,61,82,150,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AUDIO_FOLDER_PATH,61,132,150,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_BTN_GET_VIDEO_PATH,233,82,50,14
+    PUSHBUTTON      "Browse",IDC_BTN_GET_AUDIO_PATH,233,133,50,14
+    ICON            IDI_ICON_IMAGE,IDC_STATIC,10,17,21,20,SS_REALSIZEIMAGE
+    ICON            IDI_ICON_VIDEO,IDC_STATIC,10,65,21,20,SS_REALSIZEIMAGE
+    ICON            IDI_ICON_AUDIO,IDC_STATIC,10,113,21,20,SS_REALSIZEIMAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,4,12,5
+ PRODUCTVERSION 2,4,12,5
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "MobiTNT.com"
+            VALUE "FileDescription", "Yet Another Sync Tool"
+            VALUE "FileVersion", "2, 4, 12, 5"
+            VALUE "InternalName", "YaSync.exe"
+            VALUE "LegalCopyright", "(c) MobiTNT.com.  All rights reserved."
+            VALUE "OriginalFilename", "YaSync.exe"
+            VALUE "ProductName", "YaSync"
+            VALUE "ProductVersion", "2, 4, 12, 5"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SYNC_UI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 334
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 273
+    END
+
+    IDD_MAIN_UI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 238
+        HORZGUIDE, 52
+    END
+
+    IDD_SETTING_UI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 333
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 238
+    END
+
+    IDD_HTML_UI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 408
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 272
+    END
+
+    IDD_BUY_UI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 238
+    END
+
+    IDD_HELP_UI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 307
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 238
+    END
+
+    IDD_SETTING_COMMON_UI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_SETTING_SMS_UI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_SETTING_CALLLOG_UI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_SETTING_CONTACT_UI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_SETTING_CALENDAR_UI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 174
+    END
+
+    IDD_SETTING_DEVICE_UI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_RESTORE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 102
+    END
+
+    IDD_ENTER_SECURITY_CODE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 270
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 94
+    END
+
+    IDD_INSTALL_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_NEW_SMS_DLG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 466
+    END
+
+    IDD_SMS_LIST_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 409
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+
+    IDD_SETTING_FILTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_ADD_CONTACT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 245
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 110
+    END
+
+    IDD_STAT, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 127
+    END
+
+    IDD_SETTING_MEDIA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR__TRAY_MENU MENU 
+BEGIN
+    POPUP "aaa"
+    BEGIN
+        MENUITEM "Show Main UI",                ID_AAA_SHOWMAINUI
+        MENUITEM SEPARATOR
+        MENUITEM "New SMS",                     ID_AAA_NEWSMS
+        MENUITEM "File Transfer",               ID_AAA_FILEMANAGER
+        MENUITEM "Image Viewer",                ID_AAA_PHOTOVIEWER
+        MENUITEM SEPARATOR
+        MENUITEM "Scan Device",                 ID_AAA_SCANDEVICE
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        ID_AAA_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SETTING_CONTACT_UI DLGINIT
+BEGIN
+    IDC_CONTACT_SYNC_TYPE, 0x403, 35, 0
+0x7953, 0x636e, 0x4320, 0x6e6f, 0x6174, 0x7463, 0x6620, 0x6f72, 0x206d, 
+0x6870, 0x6e6f, 0x2065, 0x6f74, 0x6f20, 0x7475, 0x6f6c, 0x6b6f, "\000" 
+    IDC_CONTACT_SYNC_TYPE, 0x403, 35, 0
+0x7953, 0x636e, 0x4320, 0x6e6f, 0x6174, 0x7463, 0x6620, 0x6f72, 0x206d, 
+0x756f, 0x6c74, 0x6f6f, 0x206b, 0x6f74, 0x7020, 0x6f68, 0x656e, "\000" 
+    IDC_CONTACT_SYNC_TYPE, 0x403, 21, 0
+0x7953, 0x636e, 0x6220, 0x746f, 0x2068, 0x6964, 0x6572, 0x7463, 0x6f69, 
+0x736e, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TOOLBAR             BITMAP                  "res\\toolbar.bmp"
+IDB_TRAY_BAR            BITMAP                  "res\\TrayBar.bmp"
+IDB_NEW_SMS_BAR         BITMAP                  "res\\New-SMS-Bar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// CSS
+//
+
+IDR_CSS_STYLE           CSS                     "html\\style.css"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// JS
+//
+
+IDR_JS_SMS_THREAD       JS                      "html\\sms-thread-helper.js"
+IDR_JS_MERGE            JS                      "html\\jslib.merge.min.js"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_HTML_THREAD         HTML                    "html\\ThreadList.html"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML_IMG
+//
+
+IDR_HTML_IMG_TIME       HTML_IMG                "html\\time.png"
+IDR_HTML_IMG_TIME_SENT  HTML_IMG                "html\\timesent.png"
+IDR_HTML_IMG_CONTACT    HTML_IMG                "html\\contact.png"
+IDR_HTML_IMG_CONTACT_SENT HTML_IMG                "html\\contactsent.png"
+IDR_HTML_IMG_LOADING    HTML_IMG                "html\\sms-loading.gif"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\YaSync.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

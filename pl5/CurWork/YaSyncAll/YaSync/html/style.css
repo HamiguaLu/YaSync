@@ -1,0 +1,48 @@
+
+a{color:#bdbdbd;text-decoration:none;}
+body{font-size:25px;margin:0 auto;width:410px;background-color:#F0F0F0}
+.smsContainer {width:700px;margin:0 auto;}
+.clear{height:0;line-height:0;font-size:0;clear:both;overflow:hidden;display:block;}
+.f_left{float:left;}
+.f_right{float:right;}
+.divLine {height:1px;width:100%;background-color:#FF8040;line-height:1px;clear:both;display:block;overflow:hidden;margin:3px;}
+
+.PeButton {
+float:left;
+height: 30px;
+line-height: 30px;
+vertical-align: bottom;
+margin: 10px;
+display: inline-block;
+width:auto;
+text-align: center;
+color:white;
+font-size: 15px;
+font-weight: bold;
+padding: 0 8px;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+background-color: #5FB404;
+}
+.PeButton:hover {
+/*border: 1px solid #c6c6c6;*/
+color:white;
+text-decoration: none;
+background-color:green;
+-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+
+.SmsContent {width:98%;height:410px;margin-top:10px;padding:10px;font-size:13px;border:1px solid #AE57A4;;overflow-y:scroll}
+.MsgItem {background-color: #F2F5A9;margin-left:10px;margin-bottom:4px;margin-top:2px;width:500px;padding:2px;}
+.loading {margin:30px auto}
+.contactName{font-weight:bold;font-size:14px;}
+.smsBody{font-size:13px;margin:4px;}
+.recvTime{float:right;text-align:right;}
+.timeicon{width:16px;height:16px;}
+
+
+

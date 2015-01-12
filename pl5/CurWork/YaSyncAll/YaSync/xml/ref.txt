@@ -1,0 +1,13 @@
+http://tools.ietf.org/html/rfc5545#section-3.8.5.3
+
+
+http://code.google.com/p/outlookgcal/source/checkout
+
+http://outlookgooglesync.codeplex.com/SourceControl/changeset/view/4aefbfe0b6a4
+
+http://stackoverflow.com/questions/5976098/how-to-set-a-reminder-in-android
+
+PidLidReminderDelta					0x8501
+PidLidReminderTime					0x8502
+PidLidReminderSet					0x8503
+PidLidReminderSignalTime			0x8560

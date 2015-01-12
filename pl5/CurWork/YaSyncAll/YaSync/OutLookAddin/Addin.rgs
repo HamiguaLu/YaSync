@@ -1,0 +1,54 @@
+HKCR
+{
+	MyAddin.Addin.1 = s 'Addin Class'
+	{
+		CLSID = s '{B5157605-6174-4fa8-AE36-F0F8ED2A84F0}'
+	}
+	MyAddin.Addin = s 'Addin Class'
+	{
+		CLSID = s '{B5157605-6174-4fa8-AE36-F0F8ED2A84F0}'
+		CurVer = s 'MyAddin.Addin.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {B5157605-6174-4fa8-AE36-F0F8ED2A84F0} = s 'Addin Class'
+		{
+			ProgID = s 'MyAddin.Addin.1'
+			VersionIndependentProgID = s 'MyAddin.Addin'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{E27E91EC-2E7E-4928-9517-7430F2318B7D}'
+		}
+	}
+}
+
+HKCU
+{
+  	Software
+	{
+		Microsoft
+		{
+			Office
+			{
+				Outlook
+				{
+					Addins
+					{
+						'MyAddin.Addin'
+						{
+							val FriendlyName = s 'MobiTNT Send SMS Outlook Addin'
+							val Description = s 'MobiTNT.com Outlook Addin'
+							val LoadBehavior = d '00000003'
+							val CommandLineSafe = d '00000000' 
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+

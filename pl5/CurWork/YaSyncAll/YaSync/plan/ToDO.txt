@@ -1,0 +1,22 @@
+stop sync doesn't work when sync calendar
+sync contact memory leak
+app manager
+
+version 2.4
+2.office 2010/office 2013 improve												3
+3.contact/calendar change detect on outlook										2
+
+
+version 2.5
+1.Implement a contact conflict dealer on PC										5
+2.contact conflict dealer on phone side											3
+3.calendar conflict dealer on PC												4
+4.calendar conflict dealer on device											4
+
+version 2.6
+1.Sync contacts birthday														3
+2.Call/sms custom head															3
+3.contact/calendar sync to specified folder										2
+4.menu item in explorer															2
+5.Disable addin/menu item setting												1
+  A nice feature would be to sync the photos to my PC and allow me to specify the photo directory.
