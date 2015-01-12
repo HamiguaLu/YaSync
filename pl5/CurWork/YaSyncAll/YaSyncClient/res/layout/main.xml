@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/MainScreen"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bk"
+        android:screenOrientation="sensorPortait" >
+
+        <ImageView
+            android:id="@+id/imageSync"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/imgDesc"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sync" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageSync"
+            android:layout_centerHorizontal="true"
+            android:text="@string/app_name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/txtAd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="false"
+            android:layout_marginTop="18dp"
+            android:text="@string/AdText"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/txtAd"
+            android:layout_below="@id/txtAd"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="false"
+            android:layout_marginTop="60dp"
+            android:contentDescription="@string/imgDesc"
+            android:scaleType="fitStart"
+            android:src="@drawable/securitycode" />
+
+        <TextView
+            android:id="@+id/txtCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/imageKey"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/imageKey"
+            android:layout_centerInParent="false"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/imageKey"
+            android:text="@string/SecurityCode"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageIP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/txtAd"
+            android:layout_below="@id/imageKey"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="false"
+            android:contentDescription="@string/imgDesc"
+            android:scaleType="fitStart"
+            android:src="@drawable/devip" />
+
+        <TextView
+            android:id="@+id/txtDevIP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/txtCode"
+            android:layout_alignParentBottom="false"
+            android:layout_alignTop="@id/imageIP"
+            android:layout_below="@id/txtCode"
+            android:text="@string/DeviceIP"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtTips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageIP"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="80dp"
+            android:text="@string/smallTips"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</ScrollView>

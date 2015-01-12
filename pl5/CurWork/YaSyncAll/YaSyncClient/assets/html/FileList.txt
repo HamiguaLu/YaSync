@@ -1,0 +1,43 @@
+<dl class="fileItem">
+	<dt><a href="?action=getfile&file=aa" target="_blank"><img src="img/folder.png"/> </a></dt>
+	<dd>ddd</dd>
+	<dd><input type="checkbox" name="FileCB" value="aa"/></dd> 
+	</dl>
+ 
+  
+  <dl class="fileItem">
+	<dt><a href="?action=getfile&file=aa" target="_blank"><img src="img/zip.png"/> </a></dt>
+	<dd>ccc</dd>
+	<dd><input type="checkbox" name="FileCB" value="aa"/></dd> 
+	</dl>
+
+  
+  <dl class="fileItem">
+	<dt><a href="?action=getfile&file=aa" target="_blank"><img src="img/music.png"/> </a></dt>
+	<dd>bbb</dd>
+	<dd><input type="checkbox" name="FileCB" value="aa"/></dd> 
+	</dl>
+ 
+    <dl class="fileItem">
+	<dt><a href="?action=getfile&file=aa" target="_blank"><img src="img/doc.png"/> </a></dt>
+	<dd>bbb</dd>
+	<dd><input type="checkbox" name="FileCB" value="aa"/></dd> 
+	</dl>
+  
+  <dl class="fileItem">
+	<dt><a href="?action=getfile&file=aa" target="_blank"><img src="img/app.png"/></a></dt>
+	<dd>aaa</dd>
+	<dd><input type="checkbox" name="FileCB" value="aa"/></dd> 
+	</dl>
+	
+	<dl class="fileItem">
+	<dt><a href="?action=getfile&file=aa" target="_blank"><img src="img/apk.png"/></a></dt>
+	<dd>aaa</dd>
+	<dd><input type="checkbox" name="FileCB" value="aa"/></dd> 
+	</dl>
+	
+	<dl class="fileItem">
+	<dt><a href="?action=getfile&file=aa" target="_blank"><img src="img/video.png"/></a></dt>
+	<dd>aaa</dd>
+	<dd><input type="checkbox" name="FileCB" value="aa"/></dd> 
+	</dl>
