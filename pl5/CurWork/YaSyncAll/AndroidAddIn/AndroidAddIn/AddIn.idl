@@ -1,0 +1,55 @@
+// AddIn.idl : IDL source for AddIn
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (AddIn.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(75555AAB-0D74-4EDC-AB7C-5C85718314D7),
+	dual,
+	nonextensible,
+	helpstring("IButtonCallBack Interface"),
+	pointer_default(unique)
+]
+interface IButtonCallBack : IDispatch{
+	[id(1), helpstring("method NewSmsBtnClicked")] HRESULT NewSmsBtnClicked(IDispatch* btn);
+	[id(2), helpstring("method ReplySmsBtnClicked")] HRESULT ReplySmsBtnClicked(IDispatch* RibbonControl);
+	[id(3), helpstring("method StatBtnClicked")] HRESULT StatBtnClicked(IDispatch* RibbonControl);
+	[id(4), helpstring("method HelpBtnClicked")] HRESULT HelpBtnClicked(IDispatch* btn);
+	[id(5), helpstring("method SyncBtnClicked")] HRESULT SyncBtnClicked(IDispatch* RibbonControl);
+	[id(6), helpstring("method ThreadBtnClicked")] HRESULT ThreadBtnClicked(IDispatch* btn);
+	[id(7), helpstring("method SaveContactBtnClicked")] HRESULT SaveContactBtnClicked(IDispatch* RibbonControl);
+	[id(8), helpstring("method FilterBtnClicked")] HRESULT FilterBtnClicked(IDispatch* btn);
+	[id(9), helpstring("method DeleteBtnClicked")] HRESULT DeleteBtnClicked(IDispatch* btn);
+	[id(10), helpstring("method FileBtnClicked")] HRESULT FileBtnClicked(IDispatch* btn);
+	[id(11), helpstring("method BuyBtnClicked")] HRESULT BuyBtnClicked(IDispatch* btn);
+};
+[
+	uuid(46CAA328-6715-479E-AF19-7249B12D811D),
+	version(1.0),
+	helpstring("AndroidAddIn 1.0 Type Library")
+]
+library AndroidAddInLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(957A1C0F-CA0E-48C3-A3CA-0C67B1C7C5CC),
+		helpstring("Connect Class")
+	]
+	coclass Connect
+	{
+		[default] interface IUnknown;
+	};
+	[
+		uuid(D968CD72-EA53-47B0-AB88-6BB0E4721111),
+		helpstring("ButtonCallBack Class")
+	]
+	coclass ButtonCallBack
+	{
+		[default] interface IButtonCallBack;
+	};
+};

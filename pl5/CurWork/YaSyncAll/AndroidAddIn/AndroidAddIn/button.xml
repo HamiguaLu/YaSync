@@ -1,0 +1,96 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+  <ribbon>
+    <tabs>
+      <tab id="AndroidMgr" label="Android Manager">
+        <group id="SyncGroup" label="Sync">
+
+          <button id="SyncBtn"
+                        imageMso="ArrangeByRecurrence"
+                        size="large"
+                        label="Sync"
+						 screentip="Sync Android with Outlook Now"
+                        onAction="SyncBtnClicked"/>
+        </group>
+
+        <group id="SMSGroup" label="SMS">
+          <button id="NewSMSBtn"
+                      imageMso="ContactCardSendInstantMessage"
+                      size="large"
+                      label="New"
+					  screentip="New SMS"
+                      onAction="NewSmsBtnClicked"/>
+
+          <button id="ReplySMSBtn"
+                    imageMso="ReplyWithInstantMessage"
+                    size="large"
+                    label="Reply"
+					screentip="Reply SMS to the selected phone number"
+                    onAction="ReplySmsBtnClicked"/>
+
+          <button id="ThreadBtn"
+                      imageMso="GroupDataViewActions"
+                      size="large"
+                      label="Thread"
+					  screentip="SMS Thread List"
+                      onAction="ThreadBtnClicked"/>
+
+          <button id="StatBtn"
+                                imageMso="BorderDrawMenu"
+                                size="large"
+                                label="Stats"
+								screentip="SMS/Call log Stats"
+                                onAction="StatBtnClicked"/>
+        </group>
+
+        <group id="ToolGroup" label="Tools">
+          <button id="deleteBtn"
+                      imageMso="GroupDelete"
+                      size="large"
+                      label="Delete"
+					  screentip="Delete SMS/Call Log/Contacts both in Outlook and Android"
+                      onAction="DeleteBtnClicked"/>
+
+
+          <button id="filterBtn"
+                      imageMso="FilePermissionView"
+                      size="large"
+                      label="Filter"
+					  screentip="Add/Remove phone numbers from Filter List"
+                      onAction="FilterBtnClicked"/>
+
+          <button id="AddContactsBtn"
+                      imageMso="NewContact"
+                      size="large"
+                      label="Add contact"
+					  screentip="Add Contacts to Android"
+                      onAction="SaveContactBtnClicked"/>
+
+          <button id="fileBtn"
+                      imageMso="CopyToFolder"
+                      size="large"
+                      label="File Manager"
+					  screentip="Android File Manager"
+                      onAction="FileBtnClicked"/>
+        </group>
+
+        <group id="MobitntGroup" label="Other">
+          <button id="helpBtn"
+                      imageMso="Help"
+                      size="large"
+                      label="help"
+					  screentip="Guide on how to use YaSync"
+                      onAction="HelpBtnClicked"/>
+
+          <button id="buyBtn"
+                      imageMso="EffectOptionsMenu"
+                      size="large"
+                      label="Buy"
+					  screentip="YaSync needs your support"
+                      onAction="BuyBtnClicked"/>
+
+
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
