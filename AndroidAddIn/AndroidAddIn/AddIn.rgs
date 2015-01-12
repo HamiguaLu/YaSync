@@ -1,0 +1,51 @@
+HKCR
+{
+	AndroidAddIn.Connect.1 = s 'Connect Class'
+	{
+		CLSID = s '{957A1C0F-CA0E-48C3-A3CA-0C67B1C7C5CC}'
+	}
+	AndroidAddIn.Connect = s 'Connect Class'
+	{
+		CLSID = s '{957A1C0F-CA0E-48C3-A3CA-0C67B1C7C5CC}'
+		CurVer = s 'AndroidAddIn.Connect.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove '{957A1C0F-CA0E-48C3-A3CA-0C67B1C7C5CC}' = s 'Connect Class'
+		{
+			ProgID = s 'AndroidAddIn.Connect.1'
+			VersionIndependentProgID = s 'AndroidAddIn.Connect'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{46CAA328-6715-479E-AF19-7249B12D811D}'
+		}
+	}
+}
+
+HKCU
+{
+	NoRemove Software
+	{
+		NoRemove Microsoft
+		{
+			NoRemove Office
+			{
+				NoRemove Outlook
+				{
+					NoRemove Addins
+					{
+						AndroidAddIn.Connect
+						{
+							val Description = s 'Manage Android From Outlook'
+							val FriendlyName = s 'MobiTNT Android Add In'
+							val LoadBehavior = d 3
+						}
+					}
+				}
+			}
+		}
+	}
+}
