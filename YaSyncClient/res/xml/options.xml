@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <PreferenceCategory android:key="auto start app" android:title="Auto start:"></PreferenceCategory>
+     <CheckBoxPreference android:key="AUTO_START_WHEN_USB" android:summaryOn="Start when USB is connected" android:selectable="true" android:enabled="true" android:defaultValue='"true"' android:shouldDisableView="false" android:summaryOff="Do not start when usb is connected" android:title="When usb is connected" android:summary="When usb is connected"></CheckBoxPreference>
+    <CheckBoxPreference android:key="AUTO_START_WHEN_WIFI" android:selectable="true" android:enabled="true" android:defaultValue='"true"' android:shouldDisableView="false" android:summaryOn="Auto start when wifi is connected" android:summaryOff="Do not start when wifi is connected" android:title="When wifi is connected" android:summary="When wifi is connected"></CheckBoxPreference>
+  <PreferenceCategory android:key="backup" android:title="Backup sms:"></PreferenceCategory>
+  <CheckBoxPreference android:key="BACKUP_SMS_WHEN_START" android:title="Backup when app start" android:summaryOn="Start backup when app start" android:summaryOff="Backup manully"></CheckBoxPreference>  
+   
+    
+     
+</PreferenceScreen>

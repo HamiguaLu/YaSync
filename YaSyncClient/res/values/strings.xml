@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YaSync Client</string>
+    <string name="smallTips">Enable \'USB DEBUG\' or \'WIFI\' on device \nInstall YaSync on PC from mobitnt.com</string>
+    <string name="SecurityCode">Security Code</string>
+    <string name="btnNetwork">Network settings</string>
+    <string name="imgDesc">SyncICON</string>
+    <string name="DeviceIP">Device IP</string>
+	<string name="AdText">Sync Android with Outlook</string>
+</resources>

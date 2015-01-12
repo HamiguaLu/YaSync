@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Application</title>
+<link href="style/style.css" rel="stylesheet" type="text/css" />
+<link href="style/uploadify.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jslib.merge.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/app-helper.js"></script>
+<script type="text/javascript" src="js/jquery.uploadify.min.js"></script>
+</head>
+<body class="appContainer">
+<div id="app-div" class="content-div">
+<p class="warning">Please make sure SD Card on your device is available now if you want to install app</p>
+  <div class="sub-menu-area"> 
+	<a href="#" id="BTN-REFRESH-APP"  class="PeButton" onclick="OnRefreshApp()">Refresh</a>
+	<a href="#" id="BTN-REFRESH-APP"  class="PeButton" onclick="OnInstallApp()">Install apk from PC</a>
+    <div class='divLine'></div>
+  </div>
+  <div id="app-list" class="app-box">
+    <dl class="filelist">
+      <dt> <img src="img/app1.png" width="48px" height="48px" title="v1.0" alt="no" /> </dt>
+      <dd>PocketExport v1.0</dd>
+      <dd> <a href="#" onclick="OnClickRemvoeApp(0);" class="aHasBk  sprite sprite-delete" ></a> </dd>
+    </dl>
+    <div class="clear"></div>
+  </div>
+  <div class='divLine'></div>
+</div>
+<div class="clear"></div>
+<div style="display: none;">
+  <div id="AlertContent"></div>
+</div>
+<div style="display: none;">
+  <div id="UPLOAD-FILE-DIV" style="color: black;width:400px;height:150px;">
+    <form>
+      <div id="queue"></div>
+      <input id="file_upload" name="file_upload" type="file" multiple="true">
+    </form>
+  </div>
+</div>
+</body>
+</html>
