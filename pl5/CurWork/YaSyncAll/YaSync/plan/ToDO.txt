@@ -1,6 +1,5 @@
-stop sync doesn't work when sync calendar
-sync contact memory leak
-app manager
+hotspot connection support
+remove adb support temp
 
 version 2.4
 2.office 2010/office 2013 improve												3
