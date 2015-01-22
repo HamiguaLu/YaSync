@@ -62,22 +62,6 @@ public class NanoHTTPD {
 		}
 	}
 
-	static public void releaseWakeLock() {
-		/*
-		 * if (sWakeLock != null) { if (sWakeLock.isHeld()){
-		 * sWakeLock.release(); } }
-		 */
-		try {
-			if (sWifiLock != null) {
-				if (sWifiLock.isHeld()) {
-					sWifiLock.release();
-				}
-			}
-		} catch (Exception e) {
-		}
-
-	}
-
 	public Response serve(String uri, String method, Properties header,
 			Properties parms, Properties files) {
 		return null;
@@ -205,6 +189,8 @@ public class NanoHTTPD {
 	 * Throws an IOException if the socket is already in use
 	 */
 	public NanoHTTPD(int port) throws IOException {
+		acquireWakeLock();
+		
 		myTcpPort = port;
 		// ServerSocket a = new ServerSocket(myTcpPort);
 		myServerSocket = new ServerSocket(myTcpPort);
@@ -701,7 +687,6 @@ public class NanoHTTPD {
 				in.close();
 				is.close();
 
-				releaseWakeLock();
 			} catch (IOException ioe) {
 				try {
 					sendError(
