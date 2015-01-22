@@ -159,7 +159,9 @@ void PrintException(CInternetException * pException,TCHAR *szFunc)
 
 DeviceAgent::DeviceAgent()
 {
+#ifdef _ENABLE_ADB_CONNECTTION_
 	m_hAdbThread = 0;
+#endif	
 	m_hWifiThread = 0;
 
 	InitializeCriticalSectionAndSpinCount(&cs4HttpConnection,0x80000400);
@@ -179,7 +181,9 @@ DeviceAgent::DeviceAgent()
 DeviceAgent::~DeviceAgent()
 {
 	SetEvent(CAdbHelper::m_hExitEvt);
+#ifdef _ENABLE_ADB_CONNECTTION_	
 	WaitForSingleObject(m_hAdbThread,1000 * 60);
+#endif	
 	WaitForSingleObject(m_hWifiThread,1000 * 60);
 
 	PEWriteLog(_T("Dev scan thread exited"));
@@ -247,6 +251,7 @@ DWORD WINAPI DeviceAgent::WifiScannerT(LPVOID  lparam)
 
 int DeviceAgent::DetectDevice()
 {
+#ifdef _ENABLE_ADB_CONNECTTION_
 	if (m_hAdbThread)
 	{
 		//wait for last running thread
@@ -263,6 +268,7 @@ int DeviceAgent::DetectDevice()
 		killProcessByName(_T("adb.exe"));
 		m_hAdbThread = CreateThread(NULL,0,CAdbHelper::AdbScannerT,0,0,0);
 	}
+#endif
 
 	if (m_hWifiThread)
 	{

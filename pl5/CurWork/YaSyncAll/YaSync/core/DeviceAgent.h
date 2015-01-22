@@ -70,7 +70,9 @@ public:
 
 
 	int DetectDevice();
+#ifdef _ENABLE_ADB_CONNECTTION_		
 	HANDLE m_hAdbThread;
+#endif	
 	HANDLE m_hWifiThread;
 
 	int HttpRequest(CString sRequest,IN OUT DataBuffer &data);
