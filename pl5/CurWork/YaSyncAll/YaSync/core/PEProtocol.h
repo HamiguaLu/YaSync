@@ -11,9 +11,11 @@ using namespace std;
 #define IN
 #define OUT
 
-#define		APP_VER												216
-#define		APP_CLIENT_VER										23
+#define		APP_VER												217
+#define		APP_CLIENT_VER										24
 #define		EA_RESPONSE_LIST_SIZE								5
+
+#define _ENABLE_ADB_CONNECTTION_								1
 
 
 enum _PE_RET_DEF
@@ -294,7 +296,7 @@ typedef struct _SYNC_STAT
 
 
 
-#define		PE_ANDROID_SVR_PORT									48300
+#define		PE_ANDROID_SVR_PORT									9123
 
 
 enum _RESTORE_TYPE

@@ -120,7 +120,6 @@ protected:
 	int ParseItemCountXML(DataBuffer &data);
 
 	static DWORD WINAPI WifiScannerT(LPVOID  lparam);
-	static DWORD WINAPI TestConnT(LPVOID  lparam);
 
 	static ULONG ParseMaxID(DataBuffer &data);
 	static int ParseRetCodeXML(DataBuffer &data);
