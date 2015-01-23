@@ -1,8 +1,12 @@
 package mobitnt.android.wrapper;
 
 import java.lang.reflect.Method;
+import java.net.InetAddress;
+import java.net.NetworkInterface;
+import java.net.SocketException;
 import java.net.URLEncoder;
 import java.util.ArrayList;
+import java.util.Enumeration;
 import java.util.List;
 import java.util.Locale;
 import java.util.Timer;
@@ -78,6 +82,29 @@ public class NetApi {
 		
 		return false;
 	}
+	
+	public static String getWifiApIpAddress() {
+	    try {
+	        for (Enumeration<NetworkInterface> en = NetworkInterface.getNetworkInterfaces(); en
+	                .hasMoreElements();) {
+	            NetworkInterface intf = en.nextElement();
+	            String sInetName = intf.getName();
+	            if (sInetName.contains("wlan") || sInetName.contains("wl") || sInetName.contains("ap") ) {
+	                for (Enumeration<InetAddress> enumIpAddr = intf.getInetAddresses(); enumIpAddr
+	                        .hasMoreElements();) {
+	                    InetAddress inetAddress = enumIpAddr.nextElement();
+	                    if (!inetAddress.isLoopbackAddress()
+	                            && (inetAddress.getAddress().length == 4)) {
+	                        return inetAddress.getHostAddress();
+	                    }
+	                }
+	            }
+	        }
+	    } catch (SocketException ex) {
+
+	    }
+	    return null;
+	}
 
 	// 2、Android 获取本机IP地址方法：
 	public static String getLocalIpAddress() {
@@ -86,8 +113,12 @@ public class NetApi {
 		}
 
 		if (!isWifiEnabled()) {
-			// if no wifi available,usb USB instead
-			return "127.0.0.1";
+			String sIP = getWifiApIpAddress();
+			if (sIP == null){
+				// if no wifi available,usb USB instead
+				return "127.0.0.1";
+			}
+			return sIP;
 		}
 
 		WifiManager wifi_service = (WifiManager) EAUtil.GetEAContext()

@@ -33,7 +33,7 @@ list<MEDIA_ITEM*> 					g_mediaList;
 
 
 CRITICAL_SECTION cs4HttpConnection;
-CRITICAL_SECTION cs4TestConn;
+//CRITICAL_SECTION cs4TestConn;
 
 extern int g_iExitNow;
 extern int g_iCanSync;
@@ -165,7 +165,7 @@ DeviceAgent::DeviceAgent()
 	m_hWifiThread = 0;
 
 	InitializeCriticalSectionAndSpinCount(&cs4HttpConnection,0x80000400);
-	InitializeCriticalSectionAndSpinCount(&cs4TestConn,0x80000400);
+	//InitializeCriticalSectionAndSpinCount(&cs4TestConn,0x80000400);
 
 	CAdbHelper::m_hExitEvt = CreateEvent(0,FALSE,FALSE,0);
 
@@ -211,7 +211,7 @@ DWORD WINAPI DeviceAgent::WifiScannerT(LPVOID  lparam)
 
 		_stprintf(szInfo,_T("wifiscanner:Test conn by Setting:reg,ip is %s"),s->szDevIP);
 		PEWriteLog(szInfo);
-#if 0
+#if 1
 		DeviceAgent::TestConn(s->szDevIP);
 #else
 		TCHAR *szIP = (TCHAR*)malloc(255);
@@ -508,20 +508,10 @@ ExitConn:
 }
 
 
-DWORD WINAPI DeviceAgent::TestConnT(LPVOID  lparam)
-{
-	TCHAR *szIP = (TCHAR*)lparam;
-	DeviceAgent::TestConn(szIP);
-	free(szIP);
-	
-	return 0;
-}
-
-
 int DeviceAgent::TestConn(TCHAR *szDeviceIP)
 {
 	::CoInitialize(NULL);
-	EnterCriticalSection(&cs4TestConn);
+	//EnterCriticalSection(&cs4TestConn);
 	int iTryCount = 3;
 	CString sURL;
 	CString sSecurityCode = _T("");
@@ -626,7 +616,7 @@ TRYAGAIN:
 			PEWriteLog(_T("Client version is low!"));
 			PECore::PostMessage(WM_WRONG_CLIENT_VERSION,0,0);
 		}
-
+		
 		MSG_Data_Truck *tmpTruct = (MSG_Data_Truck *)calloc(1,sizeof(MSG_Data_Truck));
 		tmpTruct->p1 = (WPARAM)pSetting;
 		tmpTruct->p2 = (WPARAM)pDevInfo;
@@ -667,7 +657,7 @@ ExitConn:
 	if (iRet == PE_RET_OK || iTryCount <= 0 )
 	{
 		PEWriteLog(_T("Test conn end"));
-		LeaveCriticalSection(&cs4TestConn);
+		//LeaveCriticalSection(&cs4TestConn);
 		return iRet;
 	}
 
