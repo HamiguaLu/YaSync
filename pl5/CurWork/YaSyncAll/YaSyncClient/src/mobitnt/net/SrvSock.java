@@ -19,7 +19,7 @@ import mobitnt.android.wrapper.MmsApi;
 import mobitnt.util.*;
 
 public class SrvSock extends NanoHTTPD {
-	public final static int SERVER_PORT = 9123;
+	public final static int SERVER_PORT = 48300;
 	public AssetManager htmlData = null;
 
 	public SrvSock() throws IOException {
