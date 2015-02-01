@@ -13,7 +13,7 @@ public class EADefine {
 
 	public static final String ValDelimiter = "&ensp;";
 	public static final String EA_PREF_NAME = "PePref";
-	public static final String PE_APP_VER = "24";
+	public static final String PE_APP_VER = "23";
 
 	// ////////////////////////////////////////////////////////////////
 	// Error Code list

@@ -33,7 +33,7 @@ list<MEDIA_ITEM*> 					g_mediaList;
 
 
 CRITICAL_SECTION cs4HttpConnection;
-//CRITICAL_SECTION cs4TestConn;
+CRITICAL_SECTION cs4TestConn;
 
 extern int g_iExitNow;
 extern int g_iCanSync;
@@ -159,13 +159,11 @@ void PrintException(CInternetException * pException,TCHAR *szFunc)
 
 DeviceAgent::DeviceAgent()
 {
-#ifdef _ENABLE_ADB_CONNECTTION_
 	m_hAdbThread = 0;
-#endif	
 	m_hWifiThread = 0;
 
 	InitializeCriticalSectionAndSpinCount(&cs4HttpConnection,0x80000400);
-	//InitializeCriticalSectionAndSpinCount(&cs4TestConn,0x80000400);
+	InitializeCriticalSectionAndSpinCount(&cs4TestConn,0x80000400);
 
 	CAdbHelper::m_hExitEvt = CreateEvent(0,FALSE,FALSE,0);
 
@@ -181,9 +179,7 @@ DeviceAgent::DeviceAgent()
 DeviceAgent::~DeviceAgent()
 {
 	SetEvent(CAdbHelper::m_hExitEvt);
-#ifdef _ENABLE_ADB_CONNECTTION_	
 	WaitForSingleObject(m_hAdbThread,1000 * 60);
-#endif	
 	WaitForSingleObject(m_hWifiThread,1000 * 60);
 
 	PEWriteLog(_T("Dev scan thread exited"));
@@ -251,7 +247,6 @@ DWORD WINAPI DeviceAgent::WifiScannerT(LPVOID  lparam)
 
 int DeviceAgent::DetectDevice()
 {
-#ifdef _ENABLE_ADB_CONNECTTION_
 	if (m_hAdbThread)
 	{
 		//wait for last running thread
@@ -268,7 +263,6 @@ int DeviceAgent::DetectDevice()
 		killProcessByName(_T("adb.exe"));
 		m_hAdbThread = CreateThread(NULL,0,CAdbHelper::AdbScannerT,0,0,0);
 	}
-#endif
 
 	if (m_hWifiThread)
 	{
@@ -511,7 +505,7 @@ ExitConn:
 int DeviceAgent::TestConn(TCHAR *szDeviceIP)
 {
 	::CoInitialize(NULL);
-	//EnterCriticalSection(&cs4TestConn);
+	EnterCriticalSection(&cs4TestConn);
 	int iTryCount = 3;
 	CString sURL;
 	CString sSecurityCode = _T("");
@@ -616,7 +610,7 @@ TRYAGAIN:
 			PEWriteLog(_T("Client version is low!"));
 			PECore::PostMessage(WM_WRONG_CLIENT_VERSION,0,0);
 		}
-		
+
 		MSG_Data_Truck *tmpTruct = (MSG_Data_Truck *)calloc(1,sizeof(MSG_Data_Truck));
 		tmpTruct->p1 = (WPARAM)pSetting;
 		tmpTruct->p2 = (WPARAM)pDevInfo;
@@ -657,7 +651,7 @@ ExitConn:
 	if (iRet == PE_RET_OK || iTryCount <= 0 )
 	{
 		PEWriteLog(_T("Test conn end"));
-		//LeaveCriticalSection(&cs4TestConn);
+		LeaveCriticalSection(&cs4TestConn);
 		return iRet;
 	}
 

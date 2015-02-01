@@ -144,6 +144,7 @@ public class NetApi {
 		}catch (Exception e){
 			
 		}
+		SrvSock.releaseWakeLock();
 	}
 
 	static public void ReportIP() {
@@ -178,7 +179,7 @@ public class NetApi {
 		MobiTNTLog.write("ReportIP:start DoGet :" + sWifi);
 		String sResp = httpAgent.doPostEx(sUrl, nameValuePairs);
 		MobiTNTLog.write("ReportIP: DoGet return" + sResp);
-
+		SrvSock.releaseWakeLock();
 		if (sResp.length() < 2) {
 
 			if (++iReportCount > 3) {
