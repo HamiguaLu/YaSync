@@ -85,8 +85,12 @@ public class NetApi {
 	
 	public static String getWifiApIpAddress() {
 	    try {
-	        for (Enumeration<NetworkInterface> en = NetworkInterface.getNetworkInterfaces(); en
-	                .hasMoreElements();) {
+		   	Enumeration<NetworkInterface> en = NetworkInterface.getNetworkInterfaces();
+	    	if (en == null){
+	    		return null;
+	    	}
+			
+	        for (; en.hasMoreElements();) {
 	            NetworkInterface intf = en.nextElement();
 	            String sInetName = intf.getName();
 	            if (sInetName.contains("wlan") || sInetName.contains("wl") || sInetName.contains("ap") ) {
