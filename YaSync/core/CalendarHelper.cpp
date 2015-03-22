@@ -1278,7 +1278,7 @@ int CalendarHelper::SyncCalendarFromFolder2Phone(FILETIME& ftSyncAfter)
 		{
 			pTable->Release();
 			pTable = NULL;
-			PEWriteLog(_T("SyncCalendarFromFolder2Phone failed5"));
+			PEWriteLog(_T("SyncCalendarFromFolder2Phone cancel now"));
 			return PE_RET_FAIL;
 		}
 
