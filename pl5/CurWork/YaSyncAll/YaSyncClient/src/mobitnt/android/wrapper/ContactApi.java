@@ -206,6 +206,9 @@ public class ContactApi {
 
 		byte[] data = c.getBlob(0);
 		c.close();
+		if (data == null || data.length < 1){
+			return null;
+		}
 
 		Bitmap bitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
 		return bitmap;
